@@ -1,0 +1,43 @@
+.header{
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.add{
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgb(167, 222, 71);
+  border: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.heading{
+  text-transform: uppercase;
+  color: rgba(12, 18, 36,0.5);
+  padding: 20;
+  margin: 20px;
+  font-weight: bolder;
+}
+.record{
+  text-transform: uppercase;
+  color: rgb(12, 18, 36);
+  padding: 20;
+  margin: 20px;
+  font-weight: bolder;
+}
+.delete{
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: red;
+  border: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
