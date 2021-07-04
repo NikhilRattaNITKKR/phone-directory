@@ -15,7 +15,7 @@ class App extends Component{
     }]
   return (
     <div>
-    <Header/>
+    <Header heading="Phone Directory"/>
     <button className="add">Add</button>
     <div>
      <span className="heading">Name</span>
