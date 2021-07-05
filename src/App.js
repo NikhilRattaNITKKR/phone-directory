@@ -2,8 +2,16 @@ import React,{Component} from 'react'
 import Header from './Header'
 import './App.css'
 class App extends Component{
+
+  constructor(){
+    super();
+    this.state={
+      id:0,
+      subsToShow:[]
+    }
+  }
   render(){
-    let records=[{
+    /*let records=[{
       id:1,
       name:"Nikhil Ratta",
       phone:"888888888"
@@ -12,7 +20,8 @@ class App extends Component{
       id:2,
       name:"Drishti Ratta",
       phone:"888883888"
-    }]
+    }]*/
+
   return (
     <div>
     <Header heading="Phone Directory"/>
@@ -21,7 +30,7 @@ class App extends Component{
      <span className="heading">Name</span>
      <span className="heading">Phone Number</span>
      </div>
-     {records.map(sub=>{
+     {this.state.subsToShow.map(sub=>{
        return <div>
        <span key={sub.id} className="record">{sub.name}</span>
         <span key={sub.id} className="record">{sub.phone}</span>
