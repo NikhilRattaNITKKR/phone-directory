@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import Header from './Header'
 import './App.css'
+import {Link} from 'react-router-dom'
+
 class App extends Component{
 
   constructor(){
@@ -14,7 +16,7 @@ class App extends Component{
   return (
     <div>
     <Header heading="Phone Directory"/>
-    <button className="btn">Add</button>
+    <Link to='/Add'><button className="btn">Add</button></Link>
     <div>
      <span className="heading">Name</span>
      <span className="heading">Phone Number</span>

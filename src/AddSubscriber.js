@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Header from './Header';
 import './AddSubscriber.css';
-
+import {Link} from 'react-router-dom'
 class AddSubscriber extends Component{
   constructor(){
     super();
@@ -27,6 +27,7 @@ class AddSubscriber extends Component{
     return(
       <div>
           <Header heading="Add Subscriber"/>
+          <Link to='/'><button className="btn">Back</button></Link>
           <form className="subscriber-form" onSubmit={this.onAddSubscriber}>
            <label htmlFor="name" className="label-control"> Name:</label><br/>
            <input className="input-control" name="name" id="name" onChange={this.inputChangeHandler}></input><br/>
