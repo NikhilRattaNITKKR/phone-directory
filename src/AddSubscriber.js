@@ -22,6 +22,7 @@ class AddSubscriber extends Component{
     const state=this.state;
     this.props.addSubscriber(state);
     this.setState(state);
+    this.props.history.push('/');
   }
   render(){
     return(

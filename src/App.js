@@ -12,6 +12,9 @@ class App extends Component{
       subsToShow:[]
     }
   }
+  onDelete=(id)=>{
+  this.props.deleteHandler(id);
+  }
   render(){
   return (
     <div>
@@ -21,12 +24,11 @@ class App extends Component{
      <span className="heading">Name</span>
      <span className="heading">Phone Number</span>
      </div>
-     {console.log(this.props.SubscriberList)}
       { this.props.SubscriberList.map(sub=>{
-       return <div>
-       <span key={sub.id} className="record">{sub.name}</span>
-        <span key={sub.id} className="record">{sub.phone}</span>
-        <button className="delete">Delete</button>
+       return <div key ={sub.id}>
+       <span className="record">{sub.name}</span>
+        <span className="record">{sub.phone}</span>
+        <button className="delete" onClick={this.onDelete.bind(this,sub.id)}>Delete</button>
         </div>
      })}
      </div>
